@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anil Reddy Raavi | Enterprise AI and Developer Platforms</title>
+<meta name="description" content="Technology strategy and architecture leader building internal developer platforms, AI-assisted engineering and cloud modernization in financial services.">
+<meta property="og:title" content="Anil Reddy Raavi">
+<meta property="og:description" content="Internal developer platforms, GenAI engineering and modernization across ICE, JPMorgan Chase and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f5f8;--panel:#e6ebf1;--ink:#0f1b2d;--muted:#54627a;--line:#c8d1dd;--accent:#1a4fd6;--accent-ink:#fff;--hub:#0f1b2d;--hub-ink:#f2f5f8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1420;--panel:#152033;--ink:#e8edf5;--muted:#93a1b8;--line:#2a3850;--accent:#6f9bff;--accent-ink:#0d1420;--hub:#6f9bff;--hub-ink:#0d1420}}
+:root[data-theme="dark"]{--bg:#0d1420;--panel:#152033;--ink:#e8edf5;--muted:#93a1b8;--line:#2a3850;--accent:#6f9bff;--accent-ink:#0d1420;--hub:#6f9bff;--hub-ink:#0d1420}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--ink);color:var(--bg);padding:.5rem .75rem;z-index:10}
+header.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:64rem;margin:0 auto;padding:.75rem 1.25rem;display:flex;gap:1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.bar strong{font-weight:600}
+.bar nav{display:flex;gap:1.25rem;flex-wrap:wrap;font-size:.95rem}
+.bar nav a{color:var(--muted);text-decoration:none}.bar nav a:hover{color:var(--ink);text-decoration:underline}
+main{max-width:64rem;margin:0 auto;padding:0 1.25rem}
+section{padding:4rem 0;border-top:1px solid var(--line)}
+h1,h2,h3{font-family:"IBM Plex Serif",Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+h1{font-size:clamp(2.4rem,6vw,4.2rem);letter-spacing:-.02em;max-width:16ch}
+h2{font-size:1.9rem;margin-bottom:1.75rem}
+h3{font-size:1.2rem;margin-bottom:.35rem}
+.hero{border-top:0;padding:4rem 0 3rem}
+.lead{font-size:1.25rem;max-width:40rem;color:var(--muted);margin:1.25rem 0 0}
+.meta{margin:1rem 0 0;color:var(--muted);font-size:.98rem}
+.cta{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.75rem}
+.btn{display:inline-block;padding:.65rem 1.1rem;border:1.5px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:500;border-radius:4px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{background:var(--panel)}.btn.primary:hover{filter:brightness(1.1);background:var(--accent)}
+figure{margin:3rem 0 0}
+figcaption{color:var(--muted);font-size:.92rem;margin-top:.5rem;max-width:44rem}
+svg{width:100%;height:auto;display:block}
+svg text{font-family:"IBM Plex Sans",system-ui,sans-serif;fill:var(--ink);font-size:15px}
+.n{fill:var(--panel);stroke:var(--line);stroke-width:1.5}
+.hub{fill:var(--hub);stroke:none}svg .hub-t{fill:var(--hub-ink);font-weight:600;font-size:20px}svg .hub-s{fill:var(--hub-ink);font-size:13px;opacity:.85}
+.flow{fill:none;stroke:var(--accent);stroke-width:2;stroke-dasharray:1;stroke-dashoffset:0;animation:draw 1.6s ease-out .3s both}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+.focus{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.focus p{margin:0;color:var(--muted)}
+.focus>div{border-top:3px solid var(--accent);padding-top:1rem}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:11rem 1fr;gap:1.5rem;padding:1.75rem 0;border-top:1px solid var(--line)}
+.tl li:first-child{border-top:0;padding-top:0}
+.when{color:var(--muted);font-size:.95rem}
+.org{color:var(--muted);margin:0 0 .75rem}
+.tl ul,.work ul{margin:0;padding-left:1.15rem}.tl li li{display:list-item;border:0;padding:.2rem 0;grid-template-columns:none}
+.work{display:grid;grid-template-columns:repeat(2,1fr);gap:2.5rem 3rem}
+.work p{margin:.25rem 0 0;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.75rem;padding:0;list-style:none}
+.tags li{background:var(--panel);border:1px solid var(--line);padding:.15rem .6rem;border-radius:999px;font-size:.88rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.two p{margin:.25rem 0 1rem}
+footer{border-top:1px solid var(--line);padding:2rem 1.25rem 3rem;color:var(--muted);font-size:.9rem;max-width:64rem;margin:0 auto}
+@media (max-width:760px){.focus,.work,.two{grid-template-columns:1fr}.tl li{grid-template-columns:1fr;gap:.25rem}section{padding:3rem 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.flow{animation:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="bar-in">
+<strong>Anil Reddy Raavi</strong>
+<nav aria-label="Primary"><a href="#focus">Focus</a><a href="#experience">Experience</a><a href="#work">Selected work</a><a href="#background">Background</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="main">
+<section class="hero">
+<h1>I build the platforms developers build on.</h1>
+<p class="lead">Senior Technology Strategy Manager and solutions architect. I design internal developer platforms, put AI coding assistants to work, and modernize core systems in financial services.</p>
+<p class="meta">Intercontinental Exchange (ICE) &nbsp;|&nbsp; New York City area &nbsp;|&nbsp; 20+ years across banks, exchanges and ratings firms</p>
+<div class="cta"><a class="btn primary" href="#contact">Get in touch</a><a class="btn" href="https://www.linkedin.com/in/anil-reddy-raavi-9b7aa918">LinkedIn profile</a></div>
+
+<figure>
+<svg viewBox="0 0 760 320" role="img" aria-labelledby="dt dd">
+<title id="dt">ICEDevX platform architecture</title>
+<desc id="dd">Azure DevOps and GitHub feed into the ICEDevX internal developer platform, which delivers a self-service portal, CI/CD with GitOps, and AI assistant analytics.</desc>
+<path class="flow" pathLength="1" d="M180 92 C235 92 235 145 290 145"/>
+<path class="flow" pathLength="1" d="M180 228 C235 228 235 175 290 175"/>
+<path class="flow" pathLength="1" d="M470 145 C525 145 525 58 580 58"/>
+<path class="flow" pathLength="1" d="M470 160 L580 160"/>
+<path class="flow" pathLength="1" d="M470 175 C525 175 525 262 580 262"/>
+<rect class="n" x="10" y="60" width="170" height="64" rx="6"/><text x="95" y="98" text-anchor="middle">Azure DevOps</text>
+<rect class="n" x="10" y="196" width="170" height="64" rx="6"/><text x="95" y="234" text-anchor="middle">GitHub</text>
+<rect class="hub" x="290" y="105" width="180" height="110" rx="6"/>
+<text class="hub-t" x="380" y="152" text-anchor="middle">ICEDevX</text><text class="hub-s" x="380" y="176" text-anchor="middle">Internal developer platform</text>
+<rect class="n" x="580" y="30" width="170" height="56" rx="6"/><text x="665" y="63" text-anchor="middle">Self-service portal</text>
+<rect class="n" x="580" y="132" width="170" height="56" rx="6"/><text x="665" y="165" text-anchor="middle">CI/CD and GitOps</text>
+<rect class="n" x="580" y="234" width="170" height="56" rx="6"/><text x="665" y="267" text-anchor="middle">AI assistant analytics</text>
+</svg>
+<figcaption>ICEDevX at a glance: one platform that unifies the Azure DevOps and GitHub ecosystems and gives engineers a single place to onboard, ship and measure.</figcaption>
+</figure>
+</section>
+
+<section id="focus">
+<h2>Where I focus</h2>
+<div class="focus">
+<div><h3>Developer experience</h3><p>Internal developer platforms, developer portals, self-service tooling and standard architecture documentation, so teams spend time on product work rather than setup.</p></div>
+<div><h3>AI-driven engineering</h3><p>Rolling out GitHub Copilot, Cursor and Claude, and measuring their productivity and ROI with custom analytics rather than anecdotes.</p></div>
+<div><h3>Modernization and reliability</h3><p>Cloud-native patterns, microservices, SRE and observability, and moving legacy relational systems to NoSQL at scale.</p></div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<ol class="tl">
+<li><div class="when">Sep 2023 to present<br>New York, NY</div><div>
+<h3>Senior Technology Strategy Manager</h3><p class="org">Intercontinental Exchange (ICE)</p>
+<ul>
+<li>Architected and launched ICEDevX, an internal developer platform unifying Azure DevOps and GitHub and speeding up application onboarding.</li>
+<li>Built analytics dashboards that measure the productivity impact and ROI of AI coding assistants across engineering teams.</li>
+<li>Optimized CI/CD with GitOps to cut environment provisioning friction and speed up releases.</li>
+<li>Lead a team of 20+ engineers, introducing AI tools and Agile practices that lifted productivity by 80%.</li>
+<li>Interview, onboard and mentor university interns, many of whom moved into full-time engineering roles.</li>
+</ul></div></li>
+<li><div class="when">May 2022 to Sep 2023<br>Jacksonville, FL</div><div>
+<h3>Senior Technology Strategy Manager</h3><p class="org">Black Knight</p>
+<ul>
+<li>Designed developer portals and reusable integration frameworks used across engineering groups.</li>
+<li>Embedded cloud-native design patterns with service and account leadership, and briefed C-suite leaders on legacy modernization roadmaps.</li>
+<li>Led the corporate Hackathon as Event Lead, bringing engineering, product and business teams together to prototype and pitch solutions.</li>
+</ul></div></li>
+<li><div class="when">Nov 2013 to Apr 2022<br>Jersey City, NJ</div><div>
+<h3>Vice President, Software Engineering</h3><p class="org">JPMorgan Chase &amp; Co.</p>
+<ul>
+<li>Led application modernization on Java/J2EE and microservices, and built the frameworks that drove SRE adoption using OpenTelemetry, Dynatrace, Jaeger, Prometheus, Splunk and Envoy/Istio.</li>
+<li>Lead Architect for a large-scale migration from Oracle to Apache Cassandra, covering data modeling and high-throughput design.</li>
+<li>Built conversational AI and virtual assistant frameworks integrated into core banking platforms.</li>
+<li>Created portal frameworks in ReactJS, Node.js, TypeScript and ExtJS so internal teams could ship client analytics dashboards quickly.</li>
+</ul></div></li>
+</ol>
+</section>
+
+<section id="work">
+<h2>Selected work</h2>
+<div class="work">
+<div><h3>ICEDevX</h3><p>Internal developer platform joining Azure DevOps and GitHub, with self-service access to platform tools, internal microservices and architecture documentation.</p><ul class="tags"><li>Platform engineering</li><li>Azure DevOps</li><li>GitHub</li><li>GitOps</li></ul></div>
+<div><h3>AI coding assistant ROI</h3><p>Custom dashboards that show how GitHub Copilot, Cursor and Claude change engineering productivity, alongside rollout of Claude Skills and Copilot.</p><ul class="tags"><li>GenAI</li><li>Developer analytics</li></ul></div>
+<div><h3>Enterprise SRE frameworks</h3><p>Shared observability and telemetry building blocks that made SRE practice repeatable across JPMorgan Chase teams.</p><ul class="tags"><li>OpenTelemetry</li><li>Prometheus</li><li>Istio</li><li>Splunk</li></ul></div>
+<div><h3>Oracle to Cassandra migration</h3><p>Lead architecture for moving a high-volume workload from relational to NoSQL, including data modeling.</p><ul class="tags"><li>Cassandra</li><li>Data modeling</li><li>Java</li></ul></div>
+</div>
+</section>
+
+<section id="background">
+<h2>Background</h2>
+<div class="two">
+<div>
+<h3>Earlier career</h3>
+<p><strong>Morgan Stanley</strong>, Senior Lead Software Engineer (2012 to 2013). Java/J2EE mortgage applications and rules engines for Anti-Money Laundering compliance.</p>
+<p><strong>S&amp;P Global</strong>, Technical Specialist (2010 to 2012). Structured finance, mortgage-backed securities, portfolio management and ratings platforms.</p>
+<p><strong>Ness Technologies</strong>, Tech Leader (2004 to 2009). Delivered platforms for Franklin Templeton, Finaplex and S&amp;P.</p>
+<p><strong>Oxygen Networks</strong>, Senior Software Engineer (2002 to 2004). Enterprise software for Wells Fargo, Bank of America and Citigroup.</p>
+</div>
+<div>
+<h3>Education</h3>
+<p>Master of Computer Applications, Indira Gandhi National Open University</p>
+<p>Post Graduate Diploma in Computer Applications, Indira Gandhi National Open University</p>
+<p>Bachelor of Science in Electronics, Osmania University</p>
+<h3 style="margin-top:2rem">Beyond the code</h3>
+<p>I mentor university interns into full-time roles and run hackathons that turn business problems into prototypes.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p style="max-width:36rem">If you are working on developer platforms, AI-assisted engineering or modernization in financial services, I would like to hear about it.</p>
+<div class="cta"><a class="btn primary" href="mailto:anil.raavi@gmail.com">anil.raavi@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/anil-reddy-raavi-9b7aa918">LinkedIn</a></div>
+</section>
+</main>
+<footer>&copy; <span id="y">2026</span> Anil Reddy Raavi. Views are my own.</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
