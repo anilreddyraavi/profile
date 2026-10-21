@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Anil Reddy Raavi | Enterprise AI and Developer Platforms</title>
-<meta name="description" content="Technology strategy and architecture leader building internal developer platforms, AI-assisted engineering and cloud modernization in financial services.">
+<title>Anil Reddy Raavi | Principal Engineer and Architect</title>
+<meta name="description" content="Principal engineer and architect in platform engineering and developer experience, building mission-critical platforms in financial services.">
 <meta property="og:image" content="profile.jpg">
 <meta property="og:title" content="Anil Reddy Raavi">
-<meta property="og:description" content="Internal developer platforms, GenAI engineering and modernization across ICE, JPMorgan Chase and more.">
+<meta property="og:description" content="Architect of ICEDevX, a Backstage-based developer platform adopted by 75% of about 3,000 developers at ICE.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
@@ -34,7 +34,11 @@ h2{font-size:1.9rem;margin-bottom:1.75rem}
 h3{font-size:1.2rem;margin-bottom:.35rem}
 .hero{border-top:0;padding:4rem 0 3rem}
 .intro{display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center}
-.portrait{width:clamp(9rem,22vw,14rem);aspect-ratio:1;object-fit:cover;solid var(--line); var(--bg),0 0 0 8px var(--accent)}
+.portrait{width:clamp(9rem,22vw,14rem);aspect-ratio:1;border-radius:50%;object-fit:cover;border:1px solid var(--line);box-shadow:0 0 0 6px var(--bg),0 0 0 8px var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin:2.5rem 0 0;padding:0;list-style:none}
+.stats li{border-top:3px solid var(--accent);padding-top:.75rem}
+.stats b{display:block;font:600 1.9rem/1.1 "IBM Plex Serif",Georgia,serif}
+.stats span{color:var(--muted);font-size:.92rem;display:block;margin-top:.3rem}
 .lead{font-size:1.25rem;max-width:40rem;color:var(--muted);margin:1.25rem 0 0}
 .meta{margin:1rem 0 0;color:var(--muted);font-size:.98rem}
 .cta{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.75rem}
@@ -65,7 +69,7 @@ svg text{font-family:"IBM Plex Sans",system-ui,sans-serif;fill:var(--ink);font-s
 .two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
 .two p{margin:.25rem 0 1rem}
 footer{border-top:1px solid var(--line);padding:2rem 1.25rem 3rem;color:var(--muted);font-size:.9rem;max-width:64rem;margin:0 auto}
-@media (max-width:760px){.intro{grid-template-columns:1fr;gap:2rem}.portrait{order:-1}.focus,.work,.two{grid-template-columns:1fr}.tl li{grid-template-columns:1fr;gap:.25rem}section{padding:3rem 0}}
+@media (max-width:760px){.stats{grid-template-columns:1fr 1fr}.intro{grid-template-columns:1fr;gap:2rem}.portrait{order:-1}.focus,.work,.two{grid-template-columns:1fr}.tl li{grid-template-columns:1fr;gap:.25rem}section{padding:3rem 0}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.flow{animation:none}}
 </style>
 </head>
@@ -73,7 +77,7 @@ footer{border-top:1px solid var(--line);padding:2rem 1.25rem 3rem;color:var(--mu
 <a class="skip" href="#main">Skip to content</a>
 <header class="bar"><div class="bar-in">
 <strong>Anil Reddy Raavi</strong>
-<nav aria-label="Primary"><a href="#focus">Focus</a><a href="#experience">Experience</a><a href="#work">Selected work</a><a href="#background">Background</a><a href="#contact">Contact</a></nav>
+<nav aria-label="Primary"><a href="#focus">Focus</a><a href="#experience">Experience</a><a href="#work">Selected work</a><a href="#background">Background</a><a href="#volunteer">Volunteer</a><a href="#contact">Contact</a></nav>
 </div></header>
 
 <main id="main">
@@ -81,17 +85,24 @@ footer{border-top:1px solid var(--line);padding:2rem 1.25rem 3rem;color:var(--mu
 <div class="intro">
 <div>
 <h1>I build the platforms developers build on.</h1>
-<p class="lead">Senior Technology Strategy Manager and solutions architect. I design internal developer platforms, put AI coding assistants to work, and modernize core systems in financial services.</p>
-<p class="meta">New York City area &nbsp;|&nbsp; Deep industry expereince across banks, mortgage, exchanges and ratings firms</p>
-<div class="cta"><a class="btn primary" href="#contact">Get in touch</a></div>
+<p class="lead">Hands-on principal architect in platform engineering and developer experience. I design mission-critical platforms for financial services, from internal developer platforms to database migrations and SRE tooling.</p>
+<p class="meta">Principal Engineer and Architect &nbsp;|&nbsp; Intercontinental Exchange (ICE) &nbsp;|&nbsp; New York City area</p>
+<div class="cta"><a class="btn primary" href="#contact">Get in touch</a><a class="btn" href="https://www.linkedin.com/in/anil-reddy-raavi-9b7aa918">LinkedIn profile</a></div>
 </div>
 <img class="portrait" src="profile.jpg" width="280" height="280" alt="Portrait of Anil Reddy Raavi">
 </div>
 
+<ul class="stats" aria-label="Highlights">
+<li><b>75%</b><span>voluntary adoption of ICEDevX across ~3,000 developers</span></li>
+<li><b>Days to minutes</b><span>application onboarding, 2,000+ apps onboarded</span></li>
+<li><b>7 to 1-2 days</b><span>environment provisioning time</span></li>
+<li><b>65K</b><span>daily active users on the ILP portal framework</span></li>
+</ul>
+
 <figure>
 <svg viewBox="0 0 760 330" role="img" aria-labelledby="dt dd">
-<title id="dt">DevX platform architecture</title>
-<desc id="dd">Azure DevOps and GitHub feed into the DevX internal developer platform, which delivers a self-service portal, CI/CD with GitOps, AI assistant analytics, and Dev Velocity.</desc>
+<title id="dt">ICEDevX platform architecture</title>
+<desc id="dd">Azure DevOps and GitHub feed into the ICEDevX internal developer platform, which delivers a self-service portal, CI/CD with GitOps, AI assistant analytics, and Dev Velocity.</desc>
 <path class="flow" pathLength="1" d="M180 97 C235 97 235 150 290 150"/>
 <path class="flow" pathLength="1" d="M180 233 C235 233 235 180 290 180"/>
 <path class="flow" pathLength="1" d="M470 147 C525 147 525 36 580 36"/>
@@ -101,22 +112,22 @@ footer{border-top:1px solid var(--line);padding:2rem 1.25rem 3rem;color:var(--mu
 <rect class="n" x="10" y="65" width="170" height="64" rx="6"/><text x="95" y="103" text-anchor="middle">Azure DevOps</text>
 <rect class="n" x="10" y="201" width="170" height="64" rx="6"/><text x="95" y="239" text-anchor="middle">GitHub</text>
 <rect class="hub" x="290" y="110" width="180" height="110" rx="6"/>
-<text class="hub-t" x="380" y="157" text-anchor="middle">DevX</text><text class="hub-s" x="380" y="181" text-anchor="middle">Internal developer platform</text>
+<text class="hub-t" x="380" y="157" text-anchor="middle">ICEDevX</text><text class="hub-s" x="380" y="181" text-anchor="middle">Internal developer platform</text>
 <rect class="n" x="580" y="8" width="170" height="56" rx="6"/><text x="665" y="41" text-anchor="middle">Self-service portal</text>
 <rect class="n" x="580" y="94" width="170" height="56" rx="6"/><text x="665" y="127" text-anchor="middle">CI/CD and GitOps</text>
 <rect class="n" x="580" y="180" width="170" height="56" rx="6"/><text x="665" y="213" text-anchor="middle">AI assistant analytics</text>
 <rect class="n" x="580" y="266" width="170" height="56" rx="6"/><text x="665" y="299" text-anchor="middle">Dev Velocity</text>
 </svg>
-<figcaption>DevX at a glance: one platform that unifies the Azure DevOps and GitHub ecosystems and gives engineers a single place to onboard, ship and measure.</figcaption>
+<figcaption>ICEDevX at a glance: a Backstage-based platform that unifies the Azure DevOps and GitHub ecosystems and gives engineers a single place to onboard, ship and measure.</figcaption>
 </figure>
 </section>
 
 <section id="focus">
 <h2>Where I focus</h2>
 <div class="focus">
-<div><h3>Developer experience</h3><p>Internal developer platforms, developer portals, self-service tooling and standard architecture documentation, so teams spend time on product work rather than setup.</p></div>
-<div><h3>AI-driven engineering</h3><p>Rolling out GitHub Copilot, Cursor and Claude, and measuring their productivity and ROI with custom analytics rather than anecdotes.</p></div>
-<div><h3>Modernization and reliability</h3><p>Cloud-native patterns, microservices, SRE and observability, and moving legacy relational systems to NoSQL at scale.</p></div>
+<div><h3>Developer platforms</h3><p>Backstage-based internal developer platforms, developer portals and self-service onboarding that remove setup friction for thousands of engineers.</p></div>
+<div><h3>AI-assisted engineering</h3><p>Analytics on Copilot, Cursor and Claude covering acceptance rates, cycle time, PR throughput and hours saved, to guide investment and planning.</p></div>
+<div><h3>Migration and reliability</h3><p>Oracle to Cassandra migration with DataStax, SRE and observability frameworks, and cloud modernization on OpenShift, EKS, AWS and Cloud Foundry.</p></div>
 </div>
 </section>
 
@@ -124,27 +135,35 @@ footer{border-top:1px solid var(--line);padding:2rem 1.25rem 3rem;color:var(--mu
 <h2>Experience</h2>
 <ol class="tl">
 <li><div class="when">Sep 2023 to present<br>New York, NY</div><div>
-<h3>Senior Manager - Platform Engineering</h3><p class="org">Intercontinental Exchange (ICE)</p>
+<h3>Senior Manager, Platform Engineering (Release Engineering)</h3><p class="org">Intercontinental Exchange (ICE)</p>
 <ul>
-<li>Architected and launched DevX, an internal developer platform unifying Azure DevOps and GitHub and speeding up application onboarding.</li>
-<li>Built analytics dashboards that measure the productivity impact and ROI of AI coding assistants across engineering teams.</li>
-<li>Optimized CI/CD with GitOps to cut environment provisioning friction and speed up releases.</li>
-<li>Interview, onboard and mentor university interns, many of whom moved into full-time engineering roles.</li>
+<li>Architected and launched ICEDevX on Backstage, a unified developer platform across Azure DevOps and GitHub, going from concept to production in 6 months and reaching 75% voluntary adoption across ~3,000 developers.</li>
+<li>Designed self-service onboarding automation that cut application onboarding from 3-4 days to minutes, with 2,000+ applications onboarded.</li>
+<li>Optimized CI/CD and release tooling, reducing environment provisioning from 7 days to 1-2 days enterprise-wide.</li>
+<li>Built analytics on AI coding assistants (Copilot, Cursor, Claude) covering acceptance rates, cycle time, PR throughput and hours saved. Results informed leadership's decision to expand licenses and guided backlog planning as velocity increased.</li>
+<li>Set technical direction for a 20+ engineer onshore and offshore organization through five leads spanning Application Onboarding, Release Tooling, Portal Framework, and Developer Productivity Metrics (DORA) and Data Lake.</li>
+<li>Presented the architecture and results to a cross-business-unit steering committee and secured approval to proceed with ICEDevX and its roadmap.</li>
+<li>Ship platform releases twice monthly; mentored a university intern who converted to a full-time engineer.</li>
 </ul></div></li>
 <li><div class="when">May 2022 to Sep 2023<br>Jacksonville, FL</div><div>
 <h3>Senior Technology Strategy Manager</h3><p class="org">Black Knight</p>
 <ul>
-<li>Designed developer portals and reusable integration frameworks used across engineering groups.</li>
-<li>Embedded cloud-native design patterns with service and account leadership, and briefed C-suite leaders on legacy modernization roadmaps.</li>
-<li>Led the corporate Hackathon as Event Lead, bringing engineering, product and business teams together to prototype and pitch solutions.</li>
+<li>Architected a custom developer-experience platform for application onboarding and won approval from senior leadership at Black Knight and ICE. It became the foundation for ICEDevX.</li>
+<li>Designed a Spring Boot framework integrated with the Azure DevOps ecosystem to standardize service delivery.</li>
+<li>Owned the enterprise Azure DevOps service and decommissioned legacy systems, with estimated one-time savings of $500K to $1M.</li>
+<li>Briefed C-suite leaders on legacy modernization roadmaps and led the corporate hackathon, engaging 100+ participants across engineering, product and business units.</li>
+<li>Worked as both architect and hands-on engineer for an 8-person team, reporting to the CTO of Technology and Infrastructure.</li>
 </ul></div></li>
 <li><div class="when">Nov 2013 to Apr 2022<br>Jersey City, NJ</div><div>
 <h3>Vice President, Software Engineering</h3><p class="org">JPMorgan Chase &amp; Co.</p>
 <ul>
-<li>Led application modernization on Java/J2EE and microservices, and built the frameworks that drove SRE adoption using OpenTelemetry, Dynatrace, Jaeger, Prometheus, Splunk and Envoy/Istio.</li>
-<li>Lead Architect for a large-scale migration from Oracle to Apache Cassandra, covering data modeling and high-throughput design.</li>
-<li>Built conversational AI and virtual assistant frameworks integrated into core banking platforms.</li>
-<li>Created portal frameworks in ReactJS, Node.js, TypeScript and ExtJS so internal teams could ship client analytics dashboards quickly.</li>
+<li>Lead Architect for migrating 10 mission-critical J.P. Morgan Markets applications from Oracle to Apache Cassandra after a data-center rack failure exposed availability risk. Improved availability, cut portal latency from ~8 to ~3 seconds, and lowered cost.</li>
+<li>Partnered with DataStax as an early enterprise adopter of Cassandra, and diagnosed a defect in the database's Java code that shipped as a fix in a DataStax release.</li>
+<li>Built SRE frameworks on OpenTelemetry, Dynatrace, Jaeger, Prometheus, Splunk and Envoy/Istio, adopted by 5 applications, improving trace and log visibility and roughly halving MTTR.</li>
+<li>Created Interactive Landing Pages (ILP), an Ext JS portal framework adopted by line-of-business teams for analytics dashboards, supporting 65K active users per day.</li>
+<li>Designed and launched a conversational virtual assistant framework for J.P. Morgan Access that answered customer questions before they reached manual support.</li>
+<li>Modernized 10 legacy applications onto GAIA, the firm's Pivotal Cloud Foundry-based internal cloud platform.</li>
+<li>Led a team of 6 and mentored 4 interns, all of whom converted to full-time.</li>
 </ul></div></li>
 </ol>
 </section>
@@ -152,10 +171,11 @@ footer{border-top:1px solid var(--line);padding:2rem 1.25rem 3rem;color:var(--mu
 <section id="work">
 <h2>Selected work</h2>
 <div class="work">
-<div><h3>DevX</h3><p>Internal developer platform joining Azure DevOps and GitHub, with self-service access to platform tools, internal microservices and architecture documentation.</p><ul class="tags"><li>Backstage</li><li>Azure DevOps</li><li>GitHub</li><li>GitOps</li><li>NodeJS</li><li>TypeScript</li></ul></div>
-<div><h3>AI coding assistant ROI</h3><p>Custom dashboards that show how GitHub Copilot, Cursor and Claude change engineering productivity, alongside rollout of Claude Skills and Copilot.</p><ul class="tags"><li>GenAI</li><li>Developer analytics</li></ul></div>
-<div><h3>Enterprise SRE frameworks</h3><p>Shared observability and telemetry building blocks that made SRE practice repeatable across JPMorgan Chase teams.</p><ul class="tags"><li>OpenTelemetry</li><li>Prometheus</li><li>Istio</li><li>Splunk</li></ul></div>
-<div><h3>Oracle to Cassandra migration</h3><p>Lead architecture for moving a high-volume workload from relational to NoSQL, including data modeling.</p><ul class="tags"><li>Cassandra</li><li>Data modeling</li><li>Java</li></ul></div>
+<div><h3>ICEDevX</h3><p>Backstage-based internal developer platform across Azure DevOps and GitHub. Concept to production in 6 months, 75% voluntary adoption among ~3,000 developers.</p><ul class="tags"><li>Backstage</li><li>Azure DevOps</li><li>GitHub Actions</li><li>Platform engineering</li></ul></div>
+<div><h3>AI coding assistant analytics</h3><p>Measures acceptance rates, cycle time, PR throughput and hours saved across Copilot, Cursor and Claude, and informed license expansion decisions.</p><ul class="tags"><li>GenAI</li><li>DORA</li><li>Developer productivity</li></ul></div>
+<div><h3>J.P. Morgan Markets: Oracle to Cassandra</h3><p>Migrated 10 applications covering reference data, fixed income market data, research on 5,000+ companies and post-trade self-service. Latency fell from ~8 to ~3 seconds.</p><ul class="tags"><li>Cassandra</li><li>DataStax</li><li>Data modeling</li><li>Java</li></ul></div>
+<div><h3>SRE and observability frameworks</h3><p>Reusable telemetry building blocks that improved trace and log visibility and roughly halved mean time to recovery.</p><ul class="tags"><li>OpenTelemetry</li><li>Dynatrace</li><li>Prometheus</li><li>Istio</li></ul></div>
+<div><h3>Interactive Landing Pages (ILP)</h3><p>Ext JS portal framework that let line-of-business teams deliver analytics dashboards, supporting 65K active users per day.</p><ul class="tags"><li>Ext JS</li><li>Portals</li><li>Analytics</li></ul></div>
 </div>
 </section>
 
@@ -164,26 +184,37 @@ footer{border-top:1px solid var(--line);padding:2rem 1.25rem 3rem;color:var(--mu
 <div class="two">
 <div>
 <h3>Earlier career</h3>
-<p><strong>Morgan Stanley</strong>, Senior Lead Software Engineer (2012 to 2013). Java/J2EE mortgage applications and rules engines for Anti-Money Laundering compliance.</p>
-<p><strong>S&amp;P Global</strong>, Technical Specialist (2010 to 2012). Structured finance, mortgage-backed securities, portfolio management and ratings platforms.</p>
-<p><strong>Ness Technologies</strong>, Tech Leader (2004 to 2009). Delivered platforms for Franklin Templeton, Finaplex and S&amp;P.</p>
-<p><strong>Oxygen Networks</strong>, Senior Software Engineer (2002 to 2004). Enterprise software for Wells Fargo, Bank of America and Citigroup.</p>
+<p><strong>Morgan Stanley</strong>, Senior Software Engineer (2012 to 2013). Applications that enforce and validate Anti-Money Laundering rules, using Java, Oracle, DB2 and Savvion BPM.</p>
+<p><strong>S&amp;P Global</strong>, Technical Specialist (2010 to 2012). Built Compliance Gateway, Ratings Portal and Structured Finance/CMBS applications, plus a custom inter-portlet communication framework.</p>
+<p><strong>Ness Technologies</strong>, Tech Leader (2004 to 2009). Led a team of 5 delivering solutions for Franklin Templeton, S&amp;P and Finaplex (now Broadridge).</p>
+<p><strong>Oxygen Networks</strong>, Senior Software Engineer (2002 to 2004). Java rate-bidding applications for Bank of America, Citi and Wells Fargo.</p>
 </div>
 <div>
-<h3>Education</h3>
-<p>Master of Computer Applications, Indira Gandhi National Open University</p>
-<p>Post Graduate Diploma in Computer Applications, Indira Gandhi National Open University</p>
+<h3>Technology</h3>
+<p>Java, Spring, Hibernate, TypeScript, Node.js, React, Kafka, Cassandra, Oracle, SQL Server, Postgres, Azure DevOps, GitHub Actions, Kubernetes, OpenShift, EKS, AWS, Cloud Foundry, Dynatrace, Splunk, OpenTelemetry, Istio.</p>
+<h3 style="margin-top:2rem">Education</h3>
 <p>Bachelor of Science in Electronics, Osmania University</p>
-<h3 style="margin-top:2rem">Beyond the code</h3>
-<p>I mentor university interns into full-time roles and run hackathons that turn business problems into prototypes.</p>
+<p>Post Graduate Diploma in Computer Applications, Indira Gandhi National Open University</p>
 </div>
 </div>
 </section>
 
+<section id="volunteer">
+<h2>Volunteer leadership</h2>
+<h3>Plainsboro Rescue Squad</h3>
+<p class="org">Volunteer since 2021 | Technology Officer since 2023</p>
+<ul style="max-width:46rem">
+<li>Technology Officer for a 50+ member volunteer emergency medical squad, owning communications, data systems, dispatch tools and digital resources so they are dependable when calls come in.</li>
+<li>Administer Google Workspace on a free license, giving new members seamless onboarding at no software cost.</li>
+<li>Design and maintain security access controls for the squad's building and systems.</li>
+<li>Manage the public website on WordPress and GoDaddy, covering content, domain, hosting and security upkeep.</li>
+</ul>
+</section>
+
 <section id="contact">
 <h2>Contact</h2>
-<p style="max-width:36rem">If you are working on developer platforms, AI-assisted engineering or modernization in financial services, I would like to hear about it.</p>
-<div class="cta"><a class="btn" href="https://www.linkedin.com/in/anil-reddy-raavi-9b7aa918">LinkedIn</a></div>
+<p style="max-width:36rem">If you are working on developer platforms, AI-assisted engineering or large-scale modernization in financial services, I would like to hear about it.</p>
+<div class="cta"><a class="btn primary" href="mailto:anil.raavi@gmail.com">anil.raavi@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/anil-reddy-raavi-9b7aa918">LinkedIn</a></div>
 </section>
 </main>
 <footer>&copy; <span id="y">2026</span> Anil Reddy Raavi. Views are my own.</footer>
